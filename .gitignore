@@ -1,6 +1,6 @@
 # Compiled class file
 *.class
-*.bak
+*.bak*
 
 # Log file
 *.log
