@@ -1,4 +1,4 @@
-package DBUtil;
+package Connection;
 
 /**
  * Klassen indeholder login oplysninger til databasen.
@@ -6,9 +6,9 @@ package DBUtil;
 
 public class DBSetup {
 
-    private String dbUrl = "jdbc:mysql://localhost:3306/modul";
+    private String dbUrl = "jdbc:mysql://localhost:3306/crossword";
     private String username = "moduluser";
-    private String password = "password";
+    private String password = "gruppe7";
 
     public DBSetup(){}
 
