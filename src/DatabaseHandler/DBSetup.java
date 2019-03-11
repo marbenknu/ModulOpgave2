@@ -1,4 +1,4 @@
-package Connection;
+package DatabaseHandler;
 
 /**
  * Klassen indeholder login oplysninger til databasen.
