@@ -52,4 +52,4 @@ Consider optimization of the algorithm:
 How could the word list be split into several tables to minimize the
 number of combinations to try?
 
->>>>>>> 61446fa6ea1e22b8b9dd2f24bcb38fa61b620540
+>>>>>>> 
