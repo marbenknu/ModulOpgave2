@@ -26,5 +26,19 @@ public class DBExecute {
 
     }
 
+    public void executeTable(String query)
+    {
+        try
+        {
+            st = conn.newConnection().createStatement();
+            st.executeUpdate(query);
+            System.out.println("Tabel oprettet!");
+        }
+        catch (SQLException e)
+        {
+            System.out.println(e.getMessage());
+        }
+    }
+
 
 }
