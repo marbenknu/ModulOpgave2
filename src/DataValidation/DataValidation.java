@@ -1,13 +1,12 @@
-package ValidateData;
+package DataValidation;
 
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.TreeSet;
 
-public class ValidateData {
+public class DataValidation {
 
     public TreeSet<String> validateData(ResultSet res)
     {

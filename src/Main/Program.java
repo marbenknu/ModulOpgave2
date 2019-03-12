@@ -2,7 +2,7 @@ package Main;
 
 import DatabaseHandler.DBExecute;
 import DatabaseHandler.DBQuery.AllQueries;
-import ValidateData.ValidateData;
+import DataValidation.DataValidation;
 
 import java.sql.ResultSet;
 import java.util.TreeSet;
@@ -14,7 +14,7 @@ public class Program {
     private DBExecute execute = new DBExecute();
     private ResultSet res;
     private TreeSet<String> set;
-    private ValidateData validation = new ValidateData();
+    private DataValidation validation = new DataValidation();
 
     public Program(){}
 
