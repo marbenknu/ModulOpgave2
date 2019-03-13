@@ -8,6 +8,9 @@ import java.util.TreeSet;
 
 public class DataValidation {
 
+    public DataValidation() {}
+
+
     public TreeSet<String> validateData(ResultSet res)
     {
 

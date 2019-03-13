@@ -5,6 +5,7 @@ import DatabaseHandler.DBQuery.AllQueries;
 import DataValidation.DataValidation;
 
 import java.sql.ResultSet;
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class Program {
@@ -18,16 +19,40 @@ public class Program {
 
     public Program(){}
 
-    public void runStandardization()
+    public TreeSet<String> runStandardization()
     {
         String select = queries.getQuery();
         res = execute.executeSelect(select);
         set = validation.validateData(res);
+        return set;
+    }
+
+    public void runDrop()
+    {
+        String drop = queries.getDrop();
+        execute.executeDrop(drop);
     }
 
     public void runTableMaking()
     {
         String table = queries.getTable();
         execute.executeTable(table);
+    }
+
+    public void runInsert(TreeSet<String> standartSet)
+    {
+        String insert = queries.getInsert();
+        Iterator<String> itr = standartSet.iterator();
+        String ord;
+        while(itr.hasNext()) {
+
+            for (int i = 0; i < standartSet.size() - 1; i++) {
+                ord = itr.next();
+                insert = insert + "('" + ord + "'),\n";
+            }
+            ord = itr.next();
+            insert = insert + "('" + ord + "');";
+        }
+        execute.executeInsert(insert);
     }
 }
