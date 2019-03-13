@@ -11,6 +11,7 @@ public class Start {
         run.runDrop();
         run.runTableMaking();
         run.runInsert(set);
+        run.runAlgorithm();
 
     }
 }

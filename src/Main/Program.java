@@ -1,10 +1,12 @@
 package Main;
 
+import Algorithm.Algorithm1;
 import DatabaseHandler.DBExecute;
 import DatabaseHandler.DBQuery.AllQueries;
 import DataValidation.DataValidation;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Iterator;
 import java.util.TreeSet;
 
@@ -54,5 +56,27 @@ public class Program {
             insert = insert + "('" + ord + "');";
         }
         execute.executeInsert(insert);
+    }
+
+    public void runAlgorithm()
+    {
+        String select = queries.getSelect();
+        res = execute.executeSelect(select);
+        TreeSet<String> nytSet = new TreeSet<String>();
+        Algorithm.Algorithm1 algo = new Algorithm1();
+
+        try
+        {
+            while(res.next())
+            {
+                String ord = res.getString("ordliste");
+                nytSet.add(ord);
+            }
+        }
+        catch (SQLException e)
+        {
+            System.out.println(e.getMessage());
+        }
+        algo.algorithm1(nytSet);
     }
 }

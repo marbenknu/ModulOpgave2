@@ -16,6 +16,10 @@ public class AllQueries {
     private String insert = "INSERT INTO nyListe (ordliste) "
                             + "VALUES ";
 
+    private String select = "SELECT * "
+                            + "FROM nyListe "
+                            + "ORDER BY ordliste ASC;";
+
     public String getQuery()
     {
         return this.query;
@@ -29,6 +33,8 @@ public class AllQueries {
     }
 
     public String getInsert() {return this.insert;}
+
+    public String getSelect() { return this.select;}
 
 
 
