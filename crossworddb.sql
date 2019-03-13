@@ -8,6 +8,10 @@ CREATE TABLE IF NOT EXISTS wordlist
 	words	VARCHAR(3)	NOT NULL
 );
 
+-- CREATE INDEX
+CREATE INDEX idx_words
+ON wordlist (words);
+
 -- LOAD DATAFILE
 LOAD DATA INFILE "C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\3LetterWord_CSV.csv"
 INTO TABLE wordlist
