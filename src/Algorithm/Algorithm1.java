@@ -1,4 +1,4 @@
-package Algorithm;
+package algorithm;
 
 import jdk.nashorn.api.tree.Tree;
 
@@ -25,7 +25,7 @@ public class Algorithm1 {
                 }
             }
         }
-        long timeTotal = timeStart - currentTimeMillis();
+        long timeTotal = currentTimeMillis() - timeStart;
         System.out.printf("Total run time: %d min, %d sec",
                 TimeUnit.MILLISECONDS.toMinutes(timeTotal),
                 TimeUnit.MILLISECONDS.toSeconds(timeTotal) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(timeTotal)));

@@ -1,6 +1,6 @@
 package Main;
 
-import Algorithm.Algorithm1;
+import algorithm.Algorithm1;
 import DatabaseHandler.DBExecute;
 import DatabaseHandler.DBQuery.AllQueries;
 import DataValidation.DataValidation;
@@ -23,22 +23,22 @@ public class Program {
 
     public TreeSet<String> runStandardization()
     {
-        String select = queries.getQuery();
-        res = execute.executeSelect(select);
+
+        res = execute.executeSelect1();
         set = validation.validateData(res);
         return set;
     }
 
     public void runDrop()
     {
-        String drop = queries.getDrop();
-        execute.executeDrop(drop);
+
+        execute.executeDrop();
     }
 
     public void runTableMaking()
     {
-        String table = queries.getTable();
-        execute.executeTable(table);
+
+        execute.executeTable();
     }
 
     public void runInsert(TreeSet<String> standartSet)
@@ -60,16 +60,16 @@ public class Program {
 
     public void runAlgorithm()
     {
-        String select = queries.getSelect();
-        res = execute.executeSelect(select);
+
+        ResultSet res2 = execute.executeSelect2();
         TreeSet<String> nytSet = new TreeSet<String>();
-        Algorithm.Algorithm1 algo = new Algorithm1();
+        Algorithm1 algo = new Algorithm1();
 
         try
         {
-            while(res.next())
+            while(res2.next())
             {
-                String ord = res.getString("ordliste");
+                String ord = res2.getString("ordliste");
                 nytSet.add(ord);
             }
         }

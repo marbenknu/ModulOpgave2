@@ -1,20 +1,34 @@
 package DatabaseHandler;
 
+import DatabaseHandler.DBQuery.AllQueries;
+
 import java.sql.*;
 
 public class DBExecute {
     private DBConnection conn = new DBConnection();
     private Statement st;
     private ResultSet res;
+    private AllQueries queries = new AllQueries();
 
-    public DBExecute() {}
+    public DBExecute() {
+        try {
+            st = conn.newConnection().createStatement();
+        }
+
+        catch (SQLException e)
+        {
+            System.out.println(e.getMessage());
+        }
+    }
 
 
     //metode til at returnere et resultsæt fra et select statement
-    public ResultSet executeSelect(String query) {
+    public ResultSet executeSelect1() {
+        String select = queries.getQuery();
+
         try {
-                st = conn.newConnection().createStatement();
-                res = st.executeQuery(query);
+
+                res = st.executeQuery(select);
 
 
         } catch (SQLException e) {
@@ -25,12 +39,29 @@ public class DBExecute {
 
     }
 
-    public void executeDrop(String query)
+    public ResultSet executeSelect2()
     {
+        String select = queries.getSelect();
+        try {
+
+            res = st.executeQuery(select);
+
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
+        return res;
+
+    }
+
+    public void executeDrop()
+    {
+        String drop = queries.getDrop();
         try
         {
-            st = conn.newConnection().createStatement();
-            st.execute(query);
+
+            st.execute(drop);
             System.out.println("Tabel droppet!");
         }
 
@@ -40,12 +71,13 @@ public class DBExecute {
         }
     }
 
-    public void executeTable(String query)
+    public void executeTable()
     {
+        String table = queries.getTable();
         try
         {
-            st = conn.newConnection().createStatement();
-            st.executeUpdate(query);
+
+            st.executeUpdate(table);
             System.out.println("Tabel oprettet!");
         }
         catch (SQLException e)
@@ -56,9 +88,10 @@ public class DBExecute {
 
     public void executeInsert(String query)
     {
+
         try
         {
-            st = conn.newConnection().createStatement();
+
             st.executeUpdate(query);
             System.out.println("Værdier indsat!");
         }
