@@ -41,21 +41,9 @@ public class Program {
         execute.executeTable();
     }
 
-    public void runInsert(TreeSet<String> standartSet)
+    public void runInsert(TreeSet<String> standardSet)
     {
-        String insert = queries.getInsert();
-        Iterator<String> itr = standartSet.iterator();
-        String ord;
-        while(itr.hasNext()) {
-
-            for (int i = 0; i < standartSet.size() - 1; i++) {
-                ord = itr.next();
-                insert = insert + "('" + ord + "'),\n";
-            }
-            ord = itr.next();
-            insert = insert + "('" + ord + "');";
-        }
-        execute.executeInsert(insert);
+        execute.executeInsert(standardSet);
     }
 
     public void runAlgorithm()

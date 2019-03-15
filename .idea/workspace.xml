@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10e6ce2b-3bea-4d6e-951b-aae318c41dbd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crossworddb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/crossworddb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ModulOpgave2/META-INF/ModulOpgave2.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataValidation/DataValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataValidation/DataValidation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DatabaseHandler/DBQuery/AllQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseHandler/DBQuery/AllQueries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DatabaseHandler/DBSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseHandler/DBSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/krydsordv2.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/krydsordv2.vpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatabaseHandler/DBExecute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseHandler/DBExecute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Program.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,20 +59,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="82" selection-start-line="82" selection-end-line="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DatabaseHandler/DBSetup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="164">
+              <caret line="45" column="43" lean-forward="true" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+              <folding>
+                <element signature="e#891#892#0" expanded="true" />
+                <element signature="e#930#931#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="153">
+              <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -93,19 +85,7 @@
         <entry file="file://$PROJECT_DIR$/src/DataValidation/DataValidation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#304#312#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -114,16 +94,16 @@
         <entry file="file://$PROJECT_DIR$/src/DatabaseHandler/DBQuery/AllQueries.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+              <caret column="32" selection-start-column="32" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DatabaseHandler/DBExecute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-527">
-              <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="93" column="54" lean-forward="true" selection-start-line="93" selection-start-column="54" selection-end-line="93" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -138,11 +118,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/algorithm/Algorithm1.java" />
         <option value="$PROJECT_DIR$/src/Main/Start.java" />
-        <option value="$PROJECT_DIR$/src/DatabaseHandler/DBExecute.java" />
-        <option value="$PROJECT_DIR$/src/Main/Program.java" />
         <option value="$PROJECT_DIR$/src/DatabaseHandler/DBSetup.java" />
         <option value="$PROJECT_DIR$/src/DataValidation/DataValidation.java" />
         <option value="$PROJECT_DIR$/src/DatabaseHandler/DBQuery/AllQueries.java" />
+        <option value="$PROJECT_DIR$/src/Main/Program.java" />
+        <option value="$PROJECT_DIR$/src/DatabaseHandler/DBExecute.java" />
       </list>
     </option>
   </component>
@@ -158,65 +138,35 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
+              <item name="ModulOpgave2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModulOpgave2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
+              <item name="ModulOpgave2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModulOpgave2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
+              <item name="ModulOpgave2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModulOpgave2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="DatabaseHandler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DatabaseHandler" type="462c0819:PsiDirectoryNode" />
-              <item name="DBQuery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DataValidation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
+              <item name="ModulOpgave2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModulOpgave2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
-              <item name="wordlists" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -280,22 +230,18 @@
     <option name="totallyTimeSpent" value="1734000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2563966" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26072875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32692307" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -304,15 +250,18 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32867134" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Database Console" order="11" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.19829424" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.19757085" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,72 +276,59 @@
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fc0a0cb6-2fc2-4d44-a034-e4d5978f628b/console.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ace892dc-3c82-42f8-967f-6bae19053010/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://ace892dc-3c82-42f8-967f-6bae19053010/schema/crossword/table/wordlist">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://ace892dc-3c82-42f8-967f-6bae19053010/schema/crossword/table/nyliste">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DatabaseHandler/DBSetup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ace892dc-3c82-42f8-967f-6bae19053010/console.sql" />
+    <entry file="das://ace892dc-3c82-42f8-967f-6bae19053010/schema/crossword/table/wordlist" />
+    <entry file="das://ace892dc-3c82-42f8-967f-6bae19053010/schema/crossword/table/nyliste" />
     <entry file="file://$PROJECT_DIR$/src/DatabaseHandler/DBQuery/AllQueries.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm1.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithm/Algorithm1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataValidation/DataValidation.java">
+    <entry file="file://$PROJECT_DIR$/src/Main/Start.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#304#312#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Start.java">
+    <entry file="file://$PROJECT_DIR$/src/DataValidation/DataValidation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="238">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DatabaseHandler/DBExecute.java">
+    <entry file="file://$PROJECT_DIR$/src/DatabaseHandler/DBSetup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="272">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Program.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="164">
+          <caret line="45" column="43" lean-forward="true" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+          <folding>
+            <element signature="e#891#892#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DatabaseHandler/DBExecute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="93" column="54" lean-forward="true" selection-start-line="93" selection-start-column="54" selection-end-line="93" selection-end-column="54" />
         </state>
       </provider>
     </entry>

@@ -3,6 +3,8 @@ package DatabaseHandler;
 import DatabaseHandler.DBQuery.AllQueries;
 
 import java.sql.*;
+import java.util.Iterator;
+import java.util.TreeSet;
 
 public class DBExecute {
     private DBConnection conn = new DBConnection();
@@ -86,13 +88,25 @@ public class DBExecute {
         }
     }
 
-    public void executeInsert(String query)
+    public void executeInsert(TreeSet<String> standardSet)
     {
+        String insert = queries.getInsert();
+        Iterator<String> itr = standardSet.iterator();
+        String ord;
+        while(itr.hasNext()) {
+
+            for (int i = 0; i < standardSet.size() - 1; i++) {
+                ord = itr.next();
+                insert = insert + "('" + ord + "'),\n";
+            }
+            ord = itr.next();
+            insert = insert + "('" + ord + "');";
+        }
 
         try
         {
 
-            st.executeUpdate(query);
+            st.executeUpdate(insert);
             System.out.println("Værdier indsat!");
         }
 
