@@ -13,7 +13,6 @@ import java.util.TreeSet;
 public class Program {
 
 
-    private AllQueries queries = new AllQueries();
     private DBExecute execute = new DBExecute();
     private ResultSet res;
     private TreeSet<String> set;
