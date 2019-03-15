@@ -20,8 +20,8 @@ GRANT ALL ON *.* TO 'moduluser'@'localhost';
 FLUSH PRIVILEGES; -- Only needed when modifying the grant tables directly using statements such as INSERT, UPDATE, or DELETE
 
 -- Algorithm2
-SELECT ta.words AS ordA, tb.words AS ordB, tc.words AS ordC, td.words AS ordD
-FROM test AS ta, test AS tb, test AS tc, test AS td
+SELECT COUNT(*)-- ta.words AS ordA, tb.words AS ordB, tc.words AS ordC, td.words AS ordD
+FROM wordlist AS ta, wordlist AS tb, wordlist AS tc, wordlist AS td
 WHERE
 -- a join b
 SUBSTR(ta.words,1,1) = SUBSTR(tb.words,1,1)
@@ -36,8 +36,8 @@ SUBSTR(ta.words,1,1) = SUBSTR(tb.words,1,1)
 && SUBSTR(tc.words,3,1) != SUBSTR(ta.words,1,1) && SUBSTR(tc.words,3,1) != SUBSTR(ta.words,3,1)
 && SUBSTR(tc.words,3,1) != SUBSTR(tb.words,2,1) && SUBSTR(tc.words,3,1) != SUBSTR(tb.words,3,1)
 -- test v1 for eksistens af e og f
-&& CONCAT(SUBSTR(tb.words,2,1),SUBSTR(tc.words,2,1)) IN (SELECT CONCAT(SUBSTR(words,1,1),SUBSTR(words,2,1)) AS temp FROM test)
-&& CONCAT(SUBSTR(tb.words,3,1),SUBSTR(tc.words,3,1)) IN (SELECT CONCAT(SUBSTR(words,1,1),SUBSTR(words,2,1)) AS temp FROM test)
+&& CONCAT(SUBSTR(tb.words,2,1),SUBSTR(tc.words,2,1)) IN (SELECT CONCAT(SUBSTR(words,1,1),SUBSTR(words,2,1)) AS temp FROM wordlist)
+&& CONCAT(SUBSTR(tb.words,3,1),SUBSTR(tc.words,3,1)) IN (SELECT CONCAT(SUBSTR(words,1,1),SUBSTR(words,2,1)) AS temp FROM wordlist)
 -- d join a
 && SUBSTR(ta.words,3,1) = SUBSTR(td.words,1,1)
 -- a, b, c og d indeholder unikke bogstaver
@@ -48,6 +48,6 @@ SUBSTR(ta.words,1,1) = SUBSTR(tb.words,1,1)
 && SUBSTR(td.words,3,1) != SUBSTR(tb.words,2,1) && SUBSTR(td.words,3,1) != SUBSTR(tb.words,3,1)
 && SUBSTR(td.words,3,1) != SUBSTR(tc.words,2,1) && SUBSTR(td.words,3,1) != SUBSTR(tc.words,3,1)
 -- test v2 for eksistens af e og f
-&& CONCAT(SUBSTR(tb.words,2,1),SUBSTR(tc.words,2,1),SUBSTR(td.words,2,1)) IN (SELECT words FROM test)
-&& CONCAT(SUBSTR(tb.words,3,1),SUBSTR(tc.words,3,1),SUBSTR(td.words,3,1)) IN (SELECT words FROM test)
+&& CONCAT(SUBSTR(tb.words,2,1),SUBSTR(tc.words,2,1),SUBSTR(td.words,2,1)) IN (SELECT words FROM wordlist)
+&& CONCAT(SUBSTR(tb.words,3,1),SUBSTR(tc.words,3,1),SUBSTR(td.words,3,1)) IN (SELECT words FROM wordlist)
 ORDER BY ta.words ASC, tb.words ASC, tc.words ASC, td.words ASC;
