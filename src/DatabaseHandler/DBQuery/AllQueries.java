@@ -11,7 +11,7 @@ public class AllQueries {
     private String drop = "DROP TABLE IF EXISTS nyListe;";
 
     private String  table =   "CREATE TABLE nyListe "
-                            + "(ordliste VARCHAR(3) NOT NULL);";
+                            + "(ordliste CHAR(3) NOT NULL) CHARACTER SET utf8 COLLATE utf8_danish_ci;";
 
     private String insert = "INSERT INTO nyListe (ordliste) "
                             + "VALUES ";

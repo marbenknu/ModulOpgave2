@@ -6,7 +6,7 @@ package DatabaseHandler;
 
 public class DBSetup {
 
-    private String dbUrl = "jdbc:mysql://localhost:3306/crossword";
+    private String dbUrl = "jdbc:mysql://localhost:3306/crossword?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC";
     private String username = "moduluser";
     private String password = "gruppe7";
 

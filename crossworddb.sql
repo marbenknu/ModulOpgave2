@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS wordlist;
 CREATE TABLE IF NOT EXISTS wordlist
 (
 	words	CHAR(3)	NOT NULL
-);
+) CHARACTER SET utf8 COLLATE utf8_danish_ci;
 
 -- LOAD DATAFILE
 LOAD DATA INFILE "C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\3LetterWord_CSV.csv"
@@ -19,44 +19,7 @@ CREATE USER IF NOT EXISTS 'moduluser'@'localhost' IDENTIFIED BY 'gruppe7';
 GRANT ALL ON *.* TO 'moduluser'@'localhost';
 FLUSH PRIVILEGES; -- Only needed when modifying the grant tables directly using statements such as INSERT, UPDATE, or DELETE
 
-
-
-
-DROP TABLE IF EXISTS test;
-CREATE TABLE IF NOT EXISTS test
-(
-	words	CHAR(3)	NOT NULL
-);
-INSERT INTO test
-	(words)
-VALUES
-	("123"),
-    ("456"),
-    ("789"),
-	("147"),
-    ("258"),
-    ("369"),    
-    ("780"),
-    ("360"),
-    ("abc"),
-    ("def"),
-    ("ghi"),
-	("adg"),
-    ("beh"),
-    ("cfi"),
-    ("ghq"),
-    ("cfq"),
-    ("gh1"),
-    ("2fq"),
-	("14z"),
-    ("r56")
-;
-
-
--- HUSK AT DATATYPE ER ÆNDRET TIL CHAR
--- HUSK AT SLETTE TEST TABLE PERMANENT
-
-
+-- Algorithm2
 SELECT ta.words AS ordA, tb.words AS ordB, tc.words AS ordC, td.words AS ordD
 FROM test AS ta, test AS tb, test AS tc, test AS td
 WHERE
@@ -88,11 +51,3 @@ SUBSTR(ta.words,1,1) = SUBSTR(tb.words,1,1)
 && CONCAT(SUBSTR(tb.words,2,1),SUBSTR(tc.words,2,1),SUBSTR(td.words,2,1)) IN (SELECT words FROM test)
 && CONCAT(SUBSTR(tb.words,3,1),SUBSTR(tc.words,3,1),SUBSTR(td.words,3,1)) IN (SELECT words FROM test)
 ORDER BY ta.words ASC, tb.words ASC, tc.words ASC, td.words ASC;
-
-
-/*
-SELECT ta.words AS ordA, tb.words AS ordB
-FROM test AS ta, test AS tb
-WHERE ta.words IN (SELECT tb.words
-	FROM test AS tb
-    WHERE);*/

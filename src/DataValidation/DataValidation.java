@@ -15,7 +15,6 @@ public class DataValidation {
     {
 
         TreeSet<String> set = new TreeSet<String>();
-        TreeSet<String> newSet = new TreeSet<String>();
 
         try {
             while (res.next()) {
@@ -26,18 +25,6 @@ public class DataValidation {
                     set.add(ord);
                 }
             }
-
-            //der saettes en iterator på settet og ordlisten smides ind i et nyt set
-            //dette sker for at sortere æ ø å rigtigt...
-
-            Iterator<String> itr = set.iterator();
-            while(itr.hasNext())
-            {
-                String nytOrd = itr.next();
-                newSet.add(nytOrd);
-                System.out.println("Ord i den unikke liste, nu sorteret! " + nytOrd);
-            }
-
         }
 
         catch (SQLException e)
@@ -47,7 +34,7 @@ public class DataValidation {
 
 
 
-        return newSet;
+        return set;
     }
 
     private boolean letter(String ord)
