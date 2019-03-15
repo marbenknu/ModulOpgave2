@@ -1,6 +1,7 @@
 # Compiled class file
 *.class
 *.bak*
+*vpp.bak*
 .idea/
 
 # Log file
