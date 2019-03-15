@@ -9,6 +9,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Iterator;
 import java.util.TreeSet;
+import java.util.concurrent.TimeUnit;
+
+import static java.lang.System.currentTimeMillis;
 
 public class Program {
 
@@ -65,5 +68,15 @@ public class Program {
             System.out.println(e.getMessage());
         }
         algo.algorithm1(nytSet);
+    }
+
+    public void runAlgo2()
+    {
+        long timeStart = currentTimeMillis();
+        ResultSet res3 = execute.executeSelect3();
+        long timeTotal = currentTimeMillis() - timeStart;
+        System.out.printf("Total run time: %d min, %d sec",
+                TimeUnit.MILLISECONDS.toMinutes(timeTotal),
+                TimeUnit.MILLISECONDS.toSeconds(timeTotal) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(timeTotal)));
     }
 }

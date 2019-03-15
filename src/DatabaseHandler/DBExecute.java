@@ -56,6 +56,19 @@ public class DBExecute {
         return res;
 
     }
+   public ResultSet executeSelect3()
+   {
+       String algo2 = queries.getAlgo2();
+       try
+       {
+           res = st.executeQuery(algo2);
+       }
+       catch (SQLException e)
+       {
+           System.out.println(e.getMessage());
+       }
+       return res;
+   }
 
     public void executeDrop()
     {
