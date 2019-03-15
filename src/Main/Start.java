@@ -12,6 +12,5 @@ public class Start {
         run.runTableMaking();
         run.runInsert(set);
         run.runAlgorithm();
-
     }
 }
