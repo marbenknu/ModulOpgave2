@@ -1,13 +1,11 @@
 package Main;
 
-import algorithm.Algorithm1;
+import Algorithm.Algorithm1;
 import DatabaseHandler.DBExecute;
-import DatabaseHandler.DBQuery.AllQueries;
 import DataValidation.DataValidation;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Iterator;
 import java.util.TreeSet;
 import java.util.concurrent.TimeUnit;
 

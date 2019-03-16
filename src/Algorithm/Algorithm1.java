@@ -1,6 +1,4 @@
-package algorithm;
-
-import jdk.nashorn.api.tree.Tree;
+package Algorithm;
 
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -33,13 +31,7 @@ public class Algorithm1 {
 
     private boolean uniqueLettersValidation(String b, String c, String d) {
         Set<Character> uniq = new HashSet<>();
-        for (char x : b.toCharArray()) {
-            uniq.add(x);
-        }
-        for (char x : c.toCharArray()) {
-            uniq.add(x);
-        }
-        for (char x : d.toCharArray()) {
+        for (char x : (b + c + d).toCharArray()) {
             uniq.add(x);
         }
         return (uniq.size() == 9);

@@ -60,8 +60,4 @@ public class AllQueries {
     public String getInsert() {return this.insert;}
 
     public String getSelect() { return this.select;}
-
-
-
-
 }
