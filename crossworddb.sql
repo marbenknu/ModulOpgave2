@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS wordlist
 ) CHARACTER SET utf8 COLLATE utf8_danish_ci;
 
 -- LOAD DATAFILE
-LOAD DATA INFILE "C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\3LetterWord_CSV.csv"
+LOAD DATA INFILE "C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\3LetterWord_CSV.csv"-- 3LetterWord_CSV_v2.csv"
 INTO TABLE wordlist
 CHARACTER SET latin1;
 
