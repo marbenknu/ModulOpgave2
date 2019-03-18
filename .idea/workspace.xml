@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e551a441-fef1-41a2-bc97-76d50221dd1f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/Algorithm1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Algorithm1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/Algorithm1v2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Algorithm1v2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crossworddb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/crossworddb.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -116,8 +115,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,6 +162,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,17 +222,18 @@
       <workItem from="1552915111260" duration="735000" />
       <workItem from="1552922636634" duration="634000" />
       <workItem from="1552925108454" duration="1526000" />
+      <workItem from="1552941330357" duration="15000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13678000" />
+    <option name="totallyTimeSpent" value="13693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22547974" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22761194" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -328,6 +328,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm2.java" />
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm1v2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -348,15 +357,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DatabaseHandler/DBQuery/AllQueries.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
   </component>
   <component name="masterDetails">
