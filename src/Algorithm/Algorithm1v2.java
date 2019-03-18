@@ -1,20 +1,24 @@
 package Algorithm;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
 import java.util.concurrent.TimeUnit;
 
 import static java.lang.System.currentTimeMillis;
 
-public class Algorithm1 {
+public class Algorithm1v2 {
 
-    public void algorithm1(TreeSet<String> wordList) {
+    private void algorithm1v2(TreeSet<String> wordList) {
         long timeStart = currentTimeMillis();
         int i = 0;
         for (String b : wordList) {
             for (String c : wordList) {
-                for (String d : wordList) {
-                    if (uniqueLettersValidation(b, c, d) && wordsExist(b, c, d, wordList)) {
-                        i++;
+                if (unique6Letters(b, c)) {
+                    for (String d : wordList) {
+                        if (uniqueLettersValidation(b, c, d) && wordsExist(b, c, d, wordList)) {
+                            i++;
+                        }
                     }
                 }
             }
@@ -24,6 +28,14 @@ public class Algorithm1 {
         System.out.printf("Total run time: %d min, %d sec",
                 TimeUnit.MILLISECONDS.toMinutes(timeTotal),
                 TimeUnit.MILLISECONDS.toSeconds(timeTotal) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(timeTotal)));
+    }
+
+    private boolean unique6Letters(String b, String c) {
+        Set<Character> uniq6Letters = new HashSet<>();
+        for (char x : (b + c).toCharArray()) {
+            uniq6Letters.add(x);
+        }
+        return (uniq6Letters.size() == 6);
     }
 
     private boolean uniqueLettersValidation(String b, String c, String d) {

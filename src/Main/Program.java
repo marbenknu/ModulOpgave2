@@ -20,10 +20,10 @@ public class Program {
     private TreeSet<String> set;
     private DataValidation validation = new DataValidation();
 
-    public Program(){}
+    public Program() {
+    }
 
-    public TreeSet<String> runStandardization()
-    {
+    public TreeSet<String> runStandardization() {
 
         res = execute.executeSelect1();
         set = validation.validateData(res);
@@ -35,62 +35,58 @@ public class Program {
         return set;
     }
 
-    public void runDrop()
-    {
+    public void runDrop() {
 
         execute.executeDrop();
     }
 
-    public void runTableMaking()
-    {
+    public void runTableMaking() {
 
         execute.executeTable();
     }
 
-    public void runInsert(TreeSet<String> standardSet)
-    {
+    public void runInsert(TreeSet<String> standardSet) {
         execute.executeInsert(standardSet);
     }
 
-  /*  public void runAlgorithm()
-    {
+    public void runAlgorithm(String version) {
 
         ResultSet res2 = execute.executeSelect2();
         TreeSet<String> nytSet = new TreeSet<String>();
-        Algorithm1 algo = new Algorithm1();
 
-        try
-        {
-            while(res2.next())
-            {
+        try {
+            while (res2.next()) {
                 String ord = res2.getString("ordliste");
                 nytSet.add(ord);
             }
-        }
-        catch (SQLException e)
-        {
+        } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-        algo.algorithm1(nytSet);
-    } */
+        if (version.equals("algo1")) {
+            Algorithm1 algo1 = new Algorithm1();
+            algo1.algorithm1(nytSet);
+        } else if (version.equals("algo1v2")) {
+            Algorithm1v2 algo1v2 = new Algorithm11v2();
+            algo1v2.algorithm1v2(nytSet);
+        }
+    }
 
-    public void runAlgo2()
-    {
+    public void runAlgo2() {
         long timeStart = currentTimeMillis();
         ResultSet res3 = execute.executeSelect3();
 
         long timeTotal = currentTimeMillis() - timeStart;
         System.out.printf("Total run time: %d min, %d sec",
-        TimeUnit.MILLISECONDS.toMinutes(timeTotal),
-        TimeUnit.MILLISECONDS.toSeconds(timeTotal) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(timeTotal)));
+                TimeUnit.MILLISECONDS.toMinutes(timeTotal),
+                TimeUnit.MILLISECONDS.toSeconds(timeTotal) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(timeTotal)));
 
         System.out.println();
         try {
-            while (res3.next()){
+            while (res3.next()) {
                 int antal = res3.getInt("antal");
                 System.out.println(antal);
             }
-        //res3.close();
+            //res3.close();
 
         } catch (SQLException e) {
             e.printStackTrace();
