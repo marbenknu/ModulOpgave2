@@ -9,14 +9,21 @@ import static java.lang.System.currentTimeMillis;
 
 public class Algorithm1v2 {
 
+    //Listen af ord køres systematisk igennem og alle kombinationer af ord i én retning prøves af.
     public void algorithm1v2(TreeSet<String> wordList) {
         long timeStart = currentTimeMillis();
         int i = 0;
+        //Første ord findes.
         for (String b : wordList) {
+            //Andet ord findes.
             for (String c : wordList) {
-                if (unique6Letters(b, c)) {
+                //Undersøger om første og andet ord indeholder 6 unikke bogstaver. Ja: fortsæt til tredje ord ellers find næste 'c' ord.
+                if (uniqueLettersValidation(6, b, c, "")) {
+                    //Tredje ord findes.
                     for (String d : wordList) {
-                        if (uniqueLettersValidation(b, c, d) && wordsExist(b, c, d, wordList)) {
+                        //Undersøger om de tre ord der dannes i anden retning eksisterer i vores ordliste og om de udgøres af 9 unikke bogstaver.
+                        //Hvis begge betingelser er overholdt, gemmes løsningen.
+                        if (uniqueLettersValidation(9, b, c, d) && wordsExist(b, c, d, wordList)) {
                             i++;
                         }
                     }
@@ -30,20 +37,12 @@ public class Algorithm1v2 {
                 TimeUnit.MILLISECONDS.toSeconds(timeTotal) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(timeTotal)));
     }
 
-    private boolean unique6Letters(String b, String c) {
-        Set<Character> uniq6Letters = new HashSet<>();
-        for (char x : (b + c).toCharArray()) {
-            uniq6Letters.add(x);
-        }
-        return (uniq6Letters.size() == 6);
-    }
-
-    private boolean uniqueLettersValidation(String b, String c, String d) {
+    private boolean uniqueLettersValidation(int size, String b, String c, String d) {
         Set<Character> uniq = new HashSet<>();
         for (char x : (b + c + d).toCharArray()) {
             uniq.add(x);
         }
-        return (uniq.size() == 9);
+        return (uniq.size() == size);
     }
 
     private boolean wordsExist(String b, String c, String d, TreeSet<String> wordList) {
