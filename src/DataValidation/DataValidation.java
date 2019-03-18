@@ -62,8 +62,5 @@ public class DataValidation {
             return false;
         }
         return true;
-
     }
-
-
 }

@@ -10,6 +10,7 @@ import java.util.TreeSet;
 import java.util.concurrent.TimeUnit;
 
 import static java.lang.System.currentTimeMillis;
+import static java.lang.System.setOut;
 
 public class Program {
 
@@ -26,6 +27,11 @@ public class Program {
 
         res = execute.executeSelect1();
         set = validation.validateData(res);
+        try {
+            res.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return set;
     }
 
@@ -46,7 +52,7 @@ public class Program {
         execute.executeInsert(standardSet);
     }
 
-    public void runAlgorithm()
+  /*  public void runAlgorithm()
     {
 
         ResultSet res2 = execute.executeSelect2();
@@ -66,15 +72,28 @@ public class Program {
             System.out.println(e.getMessage());
         }
         algo.algorithm1(nytSet);
-    }
+    } */
 
     public void runAlgo2()
     {
         long timeStart = currentTimeMillis();
         ResultSet res3 = execute.executeSelect3();
+
         long timeTotal = currentTimeMillis() - timeStart;
         System.out.printf("Total run time: %d min, %d sec",
-                TimeUnit.MILLISECONDS.toMinutes(timeTotal),
-                TimeUnit.MILLISECONDS.toSeconds(timeTotal) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(timeTotal)));
+        TimeUnit.MILLISECONDS.toMinutes(timeTotal),
+        TimeUnit.MILLISECONDS.toSeconds(timeTotal) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(timeTotal)));
+
+        System.out.println();
+        try {
+            while (res3.next()){
+                int antal = res3.getInt("antal");
+                System.out.println(antal);
+            }
+        //res3.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

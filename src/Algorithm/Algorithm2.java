@@ -2,12 +2,12 @@ package Algorithm;
 
 public class Algorithm2 {
     private String algo2 = "SELECT ta.words AS ordA, tb.words AS ordB, tc.words AS ordC, td.words AS ordD " +
-                            "FROM test AS ta, test AS tb, test AS tc, test AS td " +
+                            "FROM nyListe AS ta, nyListe AS tb, nyListe AS tc, nyListe AS td " +
                             "WHERE SUBSTR(ta.words,1,1) = SUBSTR(tb.words,1,1) " +
                             "&& SUBSTR(ta.words,2,1) != SUBSTR(tb.words,2,1) && SUBSTR(ta.words,2,1) != SUBSTR(tb.words,3,1) " +
                             "&& SUBSTR(ta.words,3,1) != SUBSTR(tb.words,2,1) && SUBSTR(ta.words,3,1) != SUBSTR(tb.words,3,1) " +
                             "&& SUBSTR(ta.words,2,1) = SUBSTR(tc.words,1,1) " +
-                            " && SUBSTR(tc.words,2,1) != SUBSTR(ta.words,1,1) && SUBSTR(tc.words,2,1) != SUBSTR(ta.words,3,1) " +
+                            "&& SUBSTR(tc.words,2,1) != SUBSTR(ta.words,1,1) && SUBSTR(tc.words,2,1) != SUBSTR(ta.words,3,1) " +
                             "&& SUBSTR(tc.words,2,1) != SUBSTR(tb.words,2,1) && SUBSTR(tc.words,2,1) != SUBSTR(tb.words,3,1) " +
                             "&& SUBSTR(tc.words,3,1) != SUBSTR(ta.words,1,1) && SUBSTR(tc.words,3,1) != SUBSTR(ta.words,3,1) " +
                             "&& SUBSTR(tc.words,3,1) != SUBSTR(tb.words,2,1) && SUBSTR(tc.words,3,1) != SUBSTR(tb.words,3,1) " +
