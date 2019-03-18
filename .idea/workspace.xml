@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e551a441-fef1-41a2-bc97-76d50221dd1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Algorithm/Algorithm1v2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/Algorithm1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Algorithm1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/Algorithm1v2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Algorithm1v2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/Algorithm2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Start.java" afterDir="false" />
     </list>
@@ -50,7 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm1v2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="244">
+              <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,22 +59,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm2.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="382">
+              <caret line="67" column="37" lean-forward="true" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Start.java">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -84,7 +83,11 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DatabaseHandler/DBQuery/AllQueries.java">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-460">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -111,10 +114,10 @@
         <option value="$PROJECT_DIR$/src/Algorithm/Algorithm2.java" />
         <option value="$PROJECT_DIR$/src/DatabaseHandler/DBQuery/AllQueries.java" />
         <option value="$PROJECT_DIR$/src/DataValidation/DataValidation.java" />
-        <option value="$PROJECT_DIR$/src/Main/Start.java" />
-        <option value="$PROJECT_DIR$/src/Main/Program.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/Algorithm1.java" />
+        <option value="$PROJECT_DIR$/src/Main/Program.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/Algorithm1v2.java" />
+        <option value="$PROJECT_DIR$/src/Main/Start.java" />
       </list>
     </option>
   </component>
@@ -132,63 +135,58 @@
         <subPane>
           <expand>
             <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
+              <item name="ModulOpgave2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModulOpgave2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
+              <item name="ModulOpgave2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModulOpgave2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
+              <item name="ModulOpgave2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModulOpgave2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
+              <item name="ModulOpgave2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModulOpgave2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="DatabaseHandler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
+              <item name="ModulOpgave2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModulOpgave2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="DatabaseHandler" type="462c0819:PsiDirectoryNode" />
               <item name="DBQuery" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
+              <item name="ModulOpgave2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModulOpgave2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="DataValidation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
+              <item name="ModulOpgave2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModulOpgave2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Modulopgave2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Modulopgave2" type="462c0819:PsiDirectoryNode" />
-              <item name="wordlists" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552912532352" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552915840713" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/MySQL/Connector J 8.0" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -237,17 +235,17 @@
       <workItem from="1552913559532" duration="16000" />
       <workItem from="1552913578780" duration="760000" />
       <workItem from="1552914381290" duration="354000" />
+      <workItem from="1552915111260" duration="735000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10783000" />
+    <option name="totallyTimeSpent" value="11518000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11513859" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19261745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -255,8 +253,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34135976" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34135976" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -275,7 +273,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.09541578" />
+      <window_info anchor="right" id="Database" order="6" weight="0.020134227" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -341,24 +339,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm2.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DatabaseHandler/DBExecute.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DatabaseHandler/DBQuery/AllQueries.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Start.java">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-460">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm1.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -369,9 +358,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="67" column="37" lean-forward="true" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm1v2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="244">
+          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,6 +1,7 @@
 package Main;
 
 import Algorithm.Algorithm1;
+import Algorithm.Algorithm1v2;
 import DatabaseHandler.DBExecute;
 import DataValidation.DataValidation;
 
@@ -66,7 +67,7 @@ public class Program {
             Algorithm1 algo1 = new Algorithm1();
             algo1.algorithm1(nytSet);
         } else if (version.equals("algo1v2")) {
-            Algorithm1v2 algo1v2 = new Algorithm11v2();
+            Algorithm1v2 algo1v2 = new Algorithm1v2();
             algo1v2.algorithm1v2(nytSet);
         }
     }

@@ -9,7 +9,7 @@ import static java.lang.System.currentTimeMillis;
 
 public class Algorithm1v2 {
 
-    private void algorithm1v2(TreeSet<String> wordList) {
+    public void algorithm1v2(TreeSet<String> wordList) {
         long timeStart = currentTimeMillis();
         int i = 0;
         for (String b : wordList) {
