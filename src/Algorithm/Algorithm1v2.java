@@ -25,12 +25,13 @@ public class Algorithm1v2 {
                         //Hvis begge betingelser er overholdt, gemmes løsningen.
                         if (uniqueLettersValidation(9, b, c, d) && wordsExist(b, c, d, wordList)) {
                             i++;
+                            removeTransposedSolutions(b,c,d);
                         }
                     }
                 }
             }
         }
-        System.out.println("Solution: " + i);
+        System.out.println("Solution: " + i/2);
         long timeTotal = currentTimeMillis() - timeStart;
         System.out.printf("Total run time: %d min, %d sec",
                 TimeUnit.MILLISECONDS.toMinutes(timeTotal),
@@ -51,5 +52,9 @@ public class Algorithm1v2 {
         return (wordList.contains(Character.toString(b.charAt(0)) + c.charAt(0) + d.charAt(0))
                 && wordList.contains(Character.toString(b.charAt(1)) + c.charAt(1) + d.charAt(1))
                 && wordList.contains(Character.toString(b.charAt(2)) + c.charAt(2) + d.charAt(2)));
+    }
+
+    private removeTransposedSolutions() {
+        Set<HashSet> removeTrans = new HashSet<>();
     }
 }

@@ -21,7 +21,7 @@ public class Algorithm1 {
                 }
             }
         }
-        System.out.println("Solution: " + i);
+        System.out.println("Solution: " + i/2);
         long timeTotal = currentTimeMillis() - timeStart;
         System.out.printf("Total run time: %d min, %d sec",
                 TimeUnit.MILLISECONDS.toMinutes(timeTotal),
