@@ -2,7 +2,7 @@
 *.class
 *.bak*
 *vpp.bak*
-.idea/
+.idea/workspace.xml
 
 # Log file
 *.log
