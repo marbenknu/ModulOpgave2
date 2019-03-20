@@ -108,10 +108,12 @@ public class DBExecute {
         String ord;
         while(itr.hasNext()) {
 
+            //Genererer insert String til SQL Insert.
             for (int i = 0; i < standardSet.size() - 1; i++) {
                 ord = itr.next();
                 insert = insert + "('" + ord + "'),\n";
             }
+            //Stakit problem, looper til næstsidste ord og håndterer det manuelt.
             ord = itr.next();
             insert = insert + "('" + ord + "');";
         }
@@ -127,6 +129,10 @@ public class DBExecute {
         {
             System.out.println(e.getMessage());
         }
+    }
+
+    public void executeClose(){
+        conn.closeConnection();
     }
 
 

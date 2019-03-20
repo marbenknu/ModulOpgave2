@@ -73,9 +73,11 @@ public class Program {
     }
 
     public void runAlgo2() {
+        //Variabel timeStart indholder tiden siden 1 jan. 1970.
         long timeStart = currentTimeMillis();
+        //SQL algo køres.
         ResultSet res3 = execute.executeSelect3();
-
+        //Variable timeTotal indholder differencen imellem timStart og tiden efter algo er kørt.
         long timeTotal = currentTimeMillis() - timeStart;
         System.out.printf("Total run time: %d min, %d sec",
                 TimeUnit.MILLISECONDS.toMinutes(timeTotal),
@@ -85,12 +87,17 @@ public class Program {
         try {
             while (res3.next()) {
                 int antal = res3.getInt("antal");
-                System.out.println(antal);
+                System.out.println("Antal løsninger: " + antal/2);
             }
             //res3.close();
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public void closeProgram() {
+        execute.executeClose();
+        System.out.println("Program lukket!");
     }
 }

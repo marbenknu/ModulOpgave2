@@ -14,8 +14,10 @@ public class DataValidation {
     public TreeSet<String> validateData(ResultSet res)
     {
 
+        //Opretter nyt TreeSet.
         TreeSet<String> set = new TreeSet<String>();
 
+        //Kører resultst igennem og sætter alt til lowercase og tilføjer til 'set' hvis de to metoder returnerer 'true'.
         try {
             while (res.next()) {
                 String ord = res.getString("words").toLowerCase();
@@ -41,12 +43,11 @@ public class DataValidation {
         char to = ord.charAt(1);
         char tre = ord.charAt(2);
 
+        //Undersøger om ordene udelukkende udgøres af bogstaver.
         if (Character.isLetter(et) && Character.isLetter(to) && Character.isLetter(tre)) {
                 return true;
-
         }
         return false;
-
     }
 
     private boolean unique(String ord)
@@ -55,6 +56,7 @@ public class DataValidation {
         char to = ord.charAt(1);
         char tre = ord.charAt(2);
 
+        //Undersøger om alle bogstaver i hvert ord er unikke.
         if(et == to || to == tre || et == tre)
         {
             return false;

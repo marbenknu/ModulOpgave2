@@ -39,9 +39,11 @@ public class Algorithm1v2 {
 
     private boolean uniqueLettersValidation(int size, String b, String c, String d) {
         Set<Character> uniq = new HashSet<>();
+        //Lægger ordene sammen og splitter dem op i et char array, som køres igennem og alle enkelte bogstaver lægges i et sæt.
         for (char x : (b + c + d).toCharArray()) {
             uniq.add(x);
         }
+        //Returnerer true hvis ingen bogstaer er gået tabt.
         return (uniq.size() == size);
     }
 
