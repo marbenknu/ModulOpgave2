@@ -31,9 +31,7 @@ public class DataValidation {
         {
             System.out.println(e.getMessage());
         }
-
-
-
+        System.out.println("Data valideret!");
         return set;
     }
 

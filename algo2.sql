@@ -1,58 +1,60 @@
 SELECT 
-    COUNT(*)
+    /*COUNT(*),*/ ta.ordliste AS ordA, tb.ordliste AS ordB, tc.ordliste AS ordC, td.ordliste AS ordD,
+    CONCAT(SUBSTR(tb.ordliste,2,1),SUBSTR(tc.ordliste,2,1),SUBSTR(td.ordliste,2,1)) AS ordE,
+    CONCAT(SUBSTR(tb.ordliste,3,1),SUBSTR(tc.ordliste,3,1),SUBSTR(td.ordliste,3,1)) AS ordF
 FROM
-    wordlist AS ta,
-    wordlist AS tb,
-    wordlist AS tc,
-    wordlist AS td
+    nyListe AS ta,
+    nyListe AS tb,
+    nyListe AS tc,
+    nyListe AS td
 WHERE
-    SUBSTR(ta.words, 1, 1) = SUBSTR(tb.words, 1, 1)
-        && SUBSTR(ta.words, 2, 1) = SUBSTR(tc.words, 1, 1)
-        && CONCAT(SUBSTR(tb.words, 2, 1),
-            SUBSTR(tc.words, 2, 1)) IN (SELECT 
-            SUBSTR(words, 1, 2) AS temp
+    SUBSTR(ta.ordliste, 1, 1) = SUBSTR(tb.ordliste, 1, 1)
+        && SUBSTR(ta.ordliste, 2, 1) = SUBSTR(tc.ordliste, 1, 1)
+        && CONCAT(SUBSTR(tb.ordliste, 2, 1),
+            SUBSTR(tc.ordliste, 2, 1)) IN (SELECT 
+            SUBSTR(ordliste, 1, 2) AS temp
         FROM
-            wordlist)
-        && CONCAT(SUBSTR(tb.words, 3, 1),
-            SUBSTR(tc.words, 3, 1)) IN (SELECT 
-            SUBSTR(words, 1, 2) AS temp
+            nyListe)
+        && CONCAT(SUBSTR(tb.ordliste, 3, 1),
+            SUBSTR(tc.ordliste, 3, 1)) IN (SELECT 
+            SUBSTR(ordliste, 1, 2) AS temp
         FROM
-            wordlist)
-        && SUBSTR(ta.words, 3, 1) = SUBSTR(td.words, 1, 1)
-        && CONCAT(SUBSTR(tb.words, 2, 1),
-            SUBSTR(tc.words, 2, 1),
-            SUBSTR(td.words, 2, 1)) IN (SELECT 
-            words
+            nyListe)
+        && SUBSTR(ta.ordliste, 3, 1) = SUBSTR(td.ordliste, 1, 1)
+        && CONCAT(SUBSTR(tb.ordliste, 2, 1),
+            SUBSTR(tc.ordliste, 2, 1),
+            SUBSTR(td.ordliste, 2, 1)) IN (SELECT 
+            ordliste
         FROM
-            wordlist)
-        && CONCAT(SUBSTR(tb.words, 3, 1),
-            SUBSTR(tc.words, 3, 1),
-            SUBSTR(td.words, 3, 1)) IN (SELECT 
-            words
+            nyListe)
+        && CONCAT(SUBSTR(tb.ordliste, 3, 1),
+            SUBSTR(tc.ordliste, 3, 1),
+            SUBSTR(td.ordliste, 3, 1)) IN (SELECT 
+            ordliste
         FROM
-            wordlist)
-        && SUBSTR(ta.words, 1, 1) != SUBSTR(tc.words, 2, 1)
-        && SUBSTR(ta.words, 1, 1) != SUBSTR(tc.words, 3, 1)
-        && SUBSTR(ta.words, 1, 1) != SUBSTR(td.words, 2, 1)
-        && SUBSTR(ta.words, 1, 1) != SUBSTR(td.words, 3, 1)
-        && SUBSTR(ta.words, 2, 1) != SUBSTR(tb.words, 2, 1)
-        && SUBSTR(ta.words, 2, 1) != SUBSTR(tb.words, 3, 1)
-        && SUBSTR(ta.words, 2, 1) != SUBSTR(td.words, 2, 1)
-        && SUBSTR(ta.words, 2, 1) != SUBSTR(td.words, 3, 1)
-        && SUBSTR(ta.words, 3, 1) != SUBSTR(tb.words, 2, 1)
-        && SUBSTR(ta.words, 3, 1) != SUBSTR(tb.words, 3, 1)
-        && SUBSTR(ta.words, 3, 1) != SUBSTR(tc.words, 2, 1)
-        && SUBSTR(ta.words, 3, 1) != SUBSTR(tc.words, 3, 1)
-        && SUBSTR(tb.words, 2, 1) != SUBSTR(tc.words, 2, 1)
-        && SUBSTR(tb.words, 2, 1) != SUBSTR(tc.words, 3, 1)
-        && SUBSTR(tb.words, 2, 1) != SUBSTR(td.words, 2, 1)
-        && SUBSTR(tb.words, 2, 1) != SUBSTR(td.words, 3, 1)
-        && SUBSTR(tb.words, 3, 1) != SUBSTR(tc.words, 2, 1)
-        && SUBSTR(tb.words, 3, 1) != SUBSTR(tc.words, 3, 1)
-        && SUBSTR(tb.words, 3, 1) != SUBSTR(td.words, 2, 1)
-        && SUBSTR(tb.words, 3, 1) != SUBSTR(td.words, 3, 1)
-        && SUBSTR(tc.words, 2, 1) != SUBSTR(td.words, 2, 1)
-        && SUBSTR(tc.words, 2, 1) != SUBSTR(td.words, 3, 1)
-        && SUBSTR(tc.words, 3, 1) != SUBSTR(td.words, 2, 1)
-        && SUBSTR(tc.words, 3, 1) != SUBSTR(td.words, 3, 1)
+            nyListe)
+        && SUBSTR(ta.ordliste, 1, 1) != SUBSTR(tc.ordliste, 2, 1)
+        && SUBSTR(ta.ordliste, 1, 1) != SUBSTR(tc.ordliste, 3, 1)
+        && SUBSTR(ta.ordliste, 1, 1) != SUBSTR(td.ordliste, 2, 1)
+        && SUBSTR(ta.ordliste, 1, 1) != SUBSTR(td.ordliste, 3, 1)
+        && SUBSTR(ta.ordliste, 2, 1) != SUBSTR(tb.ordliste, 2, 1)
+        && SUBSTR(ta.ordliste, 2, 1) != SUBSTR(tb.ordliste, 3, 1)
+        && SUBSTR(ta.ordliste, 2, 1) != SUBSTR(td.ordliste, 2, 1)
+        && SUBSTR(ta.ordliste, 2, 1) != SUBSTR(td.ordliste, 3, 1)
+        && SUBSTR(ta.ordliste, 3, 1) != SUBSTR(tb.ordliste, 2, 1)
+        && SUBSTR(ta.ordliste, 3, 1) != SUBSTR(tb.ordliste, 3, 1)
+        && SUBSTR(ta.ordliste, 3, 1) != SUBSTR(tc.ordliste, 2, 1)
+        && SUBSTR(ta.ordliste, 3, 1) != SUBSTR(tc.ordliste, 3, 1)
+        && SUBSTR(tb.ordliste, 2, 1) != SUBSTR(tc.ordliste, 2, 1)
+        && SUBSTR(tb.ordliste, 2, 1) != SUBSTR(tc.ordliste, 3, 1)
+        && SUBSTR(tb.ordliste, 2, 1) != SUBSTR(td.ordliste, 2, 1)
+        && SUBSTR(tb.ordliste, 2, 1) != SUBSTR(td.ordliste, 3, 1)
+        && SUBSTR(tb.ordliste, 3, 1) != SUBSTR(tc.ordliste, 2, 1)
+        && SUBSTR(tb.ordliste, 3, 1) != SUBSTR(tc.ordliste, 3, 1)
+        && SUBSTR(tb.ordliste, 3, 1) != SUBSTR(td.ordliste, 2, 1)
+        && SUBSTR(tb.ordliste, 3, 1) != SUBSTR(td.ordliste, 3, 1)
+        && SUBSTR(tc.ordliste, 2, 1) != SUBSTR(td.ordliste, 2, 1)
+        && SUBSTR(tc.ordliste, 2, 1) != SUBSTR(td.ordliste, 3, 1)
+        && SUBSTR(tc.ordliste, 3, 1) != SUBSTR(td.ordliste, 2, 1)
+        && SUBSTR(tc.ordliste, 3, 1) != SUBSTR(td.ordliste, 3, 1)
 ;
