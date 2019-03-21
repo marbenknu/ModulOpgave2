@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Main
 The Crosswords - 3 letter
 =======
@@ -51,5 +50,3 @@ Do a full UP process on the project incl. diagrams.
 Consider optimization of the Algorithm:
 How could the word list be split into several tables to minimize the
 number of combinations to try?
-
->>>>>>> 
