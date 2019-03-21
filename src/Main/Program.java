@@ -11,7 +11,6 @@ import java.util.TreeSet;
 import java.util.concurrent.TimeUnit;
 
 import static java.lang.System.currentTimeMillis;
-import static java.lang.System.setOut;
 
 public class Program {
 
@@ -77,7 +76,7 @@ public class Program {
         long timeStart = currentTimeMillis();
         //SQL algo køres.
         ResultSet res3 = execute.executeSelect3();
-        //Variable timeTotal indholder differencen imellem timStart og tiden efter algo er kørt.
+        //Variable timeTotal indholder differencen imellem timeStart og timeTotal declaration tidspunktet.
         long timeTotal = currentTimeMillis() - timeStart;
         System.out.printf("Total run time: %d min, %d sec",
                 TimeUnit.MILLISECONDS.toMinutes(timeTotal),
@@ -87,7 +86,7 @@ public class Program {
         try {
             while (res3.next()) {
                 int antal = res3.getInt("antal");
-                System.out.println("Antal løsninger: " + antal/2);
+                System.out.println("Antal løsninger: " + antal / 2);
             }
             //res3.close();
 

@@ -26,7 +26,7 @@ public class AllQueries {
             "&& SUBSTR(ta.ordliste,2,1) != SUBSTR(tb.ordliste,2,1) && SUBSTR(ta.ordliste,2,1) != SUBSTR(tb.ordliste,3,1) " +
             "&& SUBSTR(ta.ordliste,3,1) != SUBSTR(tb.ordliste,2,1) && SUBSTR(ta.ordliste,3,1) != SUBSTR(tb.ordliste,3,1) " +
             "&& SUBSTR(ta.ordliste,2,1) = SUBSTR(tc.ordliste,1,1) " +
-            " && SUBSTR(tc.ordliste,2,1) != SUBSTR(ta.ordliste,1,1) && SUBSTR(tc.ordliste,2,1) != SUBSTR(ta.ordliste,3,1) " +
+            "&& SUBSTR(tc.ordliste,2,1) != SUBSTR(ta.ordliste,1,1) && SUBSTR(tc.ordliste,2,1) != SUBSTR(ta.ordliste,3,1) " +
             "&& SUBSTR(tc.ordliste,2,1) != SUBSTR(tb.ordliste,2,1) && SUBSTR(tc.ordliste,2,1) != SUBSTR(tb.ordliste,3,1) " +
             "&& SUBSTR(tc.ordliste,3,1) != SUBSTR(ta.ordliste,1,1) && SUBSTR(tc.ordliste,3,1) != SUBSTR(ta.ordliste,3,1) " +
             "&& SUBSTR(tc.ordliste,3,1) != SUBSTR(tb.ordliste,2,1) && SUBSTR(tc.ordliste,3,1) != SUBSTR(tb.ordliste,3,1) " +
